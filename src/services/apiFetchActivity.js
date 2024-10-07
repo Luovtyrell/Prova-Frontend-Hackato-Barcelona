@@ -1,7 +1,8 @@
 import axios from "axios";
 
-const apiFetchActivity = async () => {
-  const response = await axios.get("/random", {
+const apiFetchActivity = async (filter) => {
+  const url = filter ? `/filter?type=${filter}` : "/random";
+  const response = await axios.get(url, {
     headers: {
       Accept: "application/json",
     },
