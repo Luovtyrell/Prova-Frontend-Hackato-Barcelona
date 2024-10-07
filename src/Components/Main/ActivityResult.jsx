@@ -1,6 +1,6 @@
 import { useActivity } from "../../context/ActivityContext";
 
-export default function ActivityResult() {
+function ActivityResult() {
   const { activity, loading, error } = useActivity();
 
   if (loading) {
@@ -26,3 +26,5 @@ export default function ActivityResult() {
     </div>
   );
 }
+
+export default ActivityResult

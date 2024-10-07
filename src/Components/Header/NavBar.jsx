@@ -1,6 +1,6 @@
 import booredLogo from "/assets/booredLogo.png";
 
-export default function NavBar() {
+function NavBar() {
   return (
     <div className="navbar bg-base-100 mb-6 px-4">
       <div className="flex-1">
@@ -9,3 +9,5 @@ export default function NavBar() {
     </div>
   );
 }
+
+export default NavBar
