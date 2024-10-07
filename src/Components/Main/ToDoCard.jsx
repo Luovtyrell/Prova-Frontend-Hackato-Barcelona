@@ -1,8 +1,11 @@
 import mainCharacter from "/assets/mainCharacter.png";
 import "./ToDoCard.css";
 import MainButton from "../UI/MainButton";
+import { useActivity } from "../../context/ActivityContext";
 
-export default function ToDoCard() {
+function ToDoCard() {
+  const { fetchActivity, loading } = useActivity();
+
   return (
     <div className="w-full max-w-sm mx-auto">
       <div className="card">
@@ -17,9 +20,15 @@ export default function ToDoCard() {
           <h2 className="card-title font-bold text-center">
             TROBA ALGUNA COSA A FER
           </h2>
-          <MainButton key={"Generar"} label={"Generar"} />
+          <MainButton
+            label={loading ? "Carregant..." : "Generar"}
+            onClick={fetchActivity}
+          />
         </div>
       </div>
+      ACTIVITAT:
     </div>
   );
 }
+
+export default ToDoCard;
