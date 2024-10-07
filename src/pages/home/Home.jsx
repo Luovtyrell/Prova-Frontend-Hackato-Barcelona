@@ -7,9 +7,16 @@ function Home() {
   return (
     <>
       <NavBar />
-      <FiltersBar />
-      <ToDoCard />
-      <ActivityResult />
+      <div className="container mx-auto flex flex-col lg:flex-row lg:justify-between">
+        <div className="flex flex-col w-full lg:w-1/2">
+          <FiltersBar />
+          <ToDoCard />
+        </div>
+        <div className="hidden lg:block border-l-2 border-dashed border-black h-auto mx-4"></div>
+        <div className="flex flex-col items-center justify-center w-full lg:w-1/2 lg:pl-8">
+          <ActivityResult />
+        </div>
+      </div>
     </>
   );
 }

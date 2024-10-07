@@ -26,7 +26,6 @@ function ToDoCard() {
           />
         </div>
       </div>
-      ACTIVITAT:
     </div>
   );
 }
