@@ -100,25 +100,25 @@ Boored és una aplicació web que ofereix una varietat d'activitats per a realit
 
 ## Instal·lació
 
-1. Clona el repositorio:
+1. Clona el repositori:
 
    ```bash
    git clone https://github.com/Luovtyrell/Prova-Frontend-Hackato-Barcelona.git
    ```
 
-2. Navega al directorio del proyecto:
+2. Navega al directori del projecte:
 
    ```bash
    cd Prova-Frontend-Hackato-Barcelona.git
    ```
 
-3. Instala las dependencias:
+3. Instal·la les dependències:
 
    ```bash
    npm install
    ```
 
-4. Inicia la aplicación:
+4. Inicia la aplicació:
 
    ```bash
    npm run dev
